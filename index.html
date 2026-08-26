@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skinflowers | Skincare</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Skinflowers 🌸</h1>
+        <p>Skincare para tu piel</p>
+    </header>
+
+    <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+<div class="categorias">
+
+    <button onclick="filtrarProductos('todos')">✨ Todos</button>
+
+    <button onclick="filtrarProductos('protectores')">
+        ☀️ Protectores
+    </button>
+
+    <button onclick="filtrarProductos('serums')">
+        💧 Sérums
+    </button>
+
+    <button onclick="filtrarProductos('cremas')">
+        🧴 Cremas
+    </button>
+
+    <button onclick="filtrarProductos('limpieza')">
+        🫧 Limpieza
+    </button>
+
+</div>
+    <main>
+
+        <section id="inicio" class="bienvenida">
+
+    <p class="etiqueta">SKINCARE · BELLEZA · CUIDADO</p>
+
+    <h2>Tu piel, tu momento 🌸</h2>
+
+    <p class="texto-bienvenida">
+        Descubre productos de skincare seleccionados
+        para consentir y cuidar tu piel todos los días.
+    </p>
+
+    <a href="#productos" class="boton-catalogo">
+        🛍️ Ver productos
+    </a>
+
+</section>
+        </section>
+
+        <section id="productos">
+    <h2>Productos destacados</h2>
+
+    <div class="productos">
+
+        <div class="producto" data-categoria="serums">
+            <div class="imagen-producto">
+    <img src="Centella.jpg" alt="Centella Ampoule">
+</div>
+
+            <h3>Centella Ampoule</h3>
+            <p>Suero para el cuidado de la piel.</p>
+            <span>$400</span>
+
+            <button onclick="mostrarProducto('Centella Ampoule', 'Suero para el cuidado de la piel.', '$400')">
+    Ver producto
+</button>
+        </div>
+
+        <div class="producto" data-categoria="protectores">
+            <div class="imagen-producto">
+    <img src="Protector.jpg" alt="Protector Solar">
+</div>
+
+            <h3>Protector Solar</h3>
+            <p>Protección diaria para tu piel.</p>
+            <span>$350</span>
+
+            <button onclick="mostrarProducto('Protector Solar', 'Protección diaria para tu piel.', '$350')">
+    Ver producto
+</button>
+        </div>
+
+        <div class="producto" data-categoria="cremas">
+            <div class="imagen-producto">
+    <img src="Dr-althea.jpg" alt="Dr. Althea 345">
+</div>
+
+            <h3>Dr. Althea 345</h3>
+            <p>Crema para el cuidado facial.</p>
+            <span>$430</span>
+
+            <button onclick="mostrarProducto('Dr. Althea 345', 'Crema para el cuidado facial.', '$430')">
+    Ver producto
+</button>
+        <div class="producto" data-categoria="serums">
+
+    <div class="imagen-producto">
+        <img src="Anua77.jpg" alt="Anua 77">
+    </div>
+
+    <h3>Producto 4</h3>
+
+    <p>
+        Descripción del producto.
+    </p>
+
+    <span>$450</span>
+
+    <button onclick="mostrarProducto(
+        'Anua 77',
+        'Descripción del producto.',
+        '$450'
+    )">
+        Ver producto
+    </button>
+
+</div>
+
+    </div>
+</section>
+
+        <section id="nosotros" class="nosotros">
+
+    <p class="etiqueta">CONOCE SKINFLOWERS</p>
+
+    <h2>Tu piel merece florecer 🌸</h2>
+
+    <p>
+        En Skinflowers buscamos ofrecer productos de skincare
+        cuidadosamente seleccionados para acompañarte en tu
+        rutina de cuidado personal.
+    </p>
+
+    <p>
+        Queremos que encontrar productos para tu piel sea
+        sencillo, bonito y una experiencia agradable.
+    </p>
+
+</section>
+
+        <section id="contacto" class="contacto">
+
+    <p class="etiqueta">¿TIENES ALGUNA DUDA?</p>
+
+    <h2>Estamos para ayudarte 🌸</h2>
+
+    <p>
+        ¿Quieres hacer un pedido o necesitas información
+        sobre algún producto? Escríbenos por WhatsApp.
+    </p>
+
+    <a
+        href="https://wa.me/529611227131"
+        target="_blank"
+        class="boton-whatsapp">
+        💬 Escribir por WhatsApp
+    </a>
+
+</section>
+
+    </main>
+<div id="ventana-producto" class="ventana">
+    <div class="contenido-ventana">
+
+        <button class="cerrar" onclick="cerrarProducto()">×</button>
+
+        <h2 id="nombre-producto"></h2>
+
+        <p id="descripcion-producto"></p>
+
+        <h3 id="precio-producto"></h3>
+
+        <button class="pedido">Hacer pedido</button>
+
+    </div>
+</div>
+    <footer>
+
+    <h2>Skinflowers 🌸</h2>
+
+    <p>Skincare para cuidar y consentir tu piel.</p>
+
+    <div class="footer-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </div>
+
+    <p class="copyright">
+        © 2026 Skinflowers. Todos los derechos reservados.
+    </p>
+
+</footer>
+<script src="script.js"></script>
+
+</body>
+</html>
